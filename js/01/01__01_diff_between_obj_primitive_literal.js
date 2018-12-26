@@ -35,28 +35,28 @@ var bool2 = new Boolean(true);                     // boolean obj instance
 //
 // primitive variables are strictly equal to literals
 // primitives are compared by value and values are literals
-if (str1 === "this is a simple string") {
+if (str1 === "this is a simple string") {  // true
   console.log('equal')
 }
-if (num1 === 1.45) {
+if (num1 === 1.45) { // true
   console.log('equal')
 }
-if (bool1 === true) {
+if (bool1 === true) {  // true
   console.log('equal')
 }
 // object instances are not strictly equal to literals
 // type is object
-if (str2 === "this is a simple string") {
+if (str2 === "this is a simple string") {  // false
+  console.log('equal')  
+} else {
+  console.log('not equal')
+}
+if (num2 === 1.45) {  // false
   console.log('equal')
 } else {
   console.log('not equal')
 }
-if (num2 === 1.45) {
-  console.log('equal')
-} else {
-  console.log('not equal')
-}
-if (bool2 === true) {
+if (bool2 === true) {  // false
   console.log('equal')
 } else {
   console.log('not equal')
